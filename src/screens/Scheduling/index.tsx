@@ -32,7 +32,7 @@ import {
   Content,
   Footer,
 } from './styles';
-import { Button } from '../components/Button';
+import { Button } from '../../components/Button';
 
 interface RentalPeriod {
     //start: number;    foi desabilitado pelo professor na aula

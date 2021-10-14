@@ -1,14 +1,17 @@
 import React from 'react';
 
-import { createStackNavigator, TransitionPresets } from '@react-navigation/stack'
+import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 
+import { Home } from '../screens/Home';
+import { CarDetails } from '../screens/CarDetails';
+import { Scheduling } from '../screens/Scheduling';
+import { SchedulingDetails } from '../screens/SchedulingDetails';
+import { SchedulingComplete } from '../screens/SchedulingComplete';
+import { MyCars } from '../screens/MyCars';
 
-import { Home } from '../screens/Home'
-import { CarDetails } from '../screens/CarDetails'
-import { Scheduling } from '../screens/Scheduling'
-import { SchedulingDetails } from '../screens/SchedulingDetails'
-import { SchedulingComplete } from '../screens/SchedulingComplete'
-import { MyCars } from '../screens/MyCars'
+import { SignIn } from '../screens/SignIn';
+import { SignUpFirstStep } from '../screens/SignUp/SignUpFirstStep';
+
 
 const  { Navigator, Screen }  = createStackNavigator();
 
@@ -18,13 +21,15 @@ export function StackRoutes(){
     return(
 
         <Stack.Navigator
-            initialRouteName="Home"
+            initialRouteName="SignIn"
             screenOptions={({ route, navigation }) => ({
                 headerShown: false,
                 gestureEnable: true,
                 ...TransitionPresets.ModalPresentationIOS
             })}
         >
+            <Stack.Screen name="SignIn" component={SignIn} />
+            <Stack.Screen name="SignUpFirstStep" component={SignUpFirstStep} />
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="CarDetails" component={CarDetails} />
             <Stack.Screen name="Scheduling" component={Scheduling} />

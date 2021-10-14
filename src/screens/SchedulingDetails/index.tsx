@@ -8,7 +8,7 @@ import { Alert } from 'react-native';
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
 import { Accessory } from '../../components/Accessory';
-import { Button } from '../components/Button';
+import { Button } from '../../components/Button';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { CarDTO } from '../../dtos/CarDTO';
 
@@ -124,7 +124,7 @@ export function SchedulingDetails(){
             <BackButton onPress={ handleBack }/>
         </Header>
         <CarImages>
-          <ImageSlider imageUrl={ car.photos }/>
+          <ImageSlider imagesUrl={ car.photos }/>
         </CarImages>
 
         <Content>
