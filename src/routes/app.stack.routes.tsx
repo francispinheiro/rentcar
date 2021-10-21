@@ -7,34 +7,32 @@ import { CarDetails } from '../screens/CarDetails';
 import { Scheduling } from '../screens/Scheduling';
 import { SchedulingDetails } from '../screens/SchedulingDetails';
 import { SchedulingComplete } from '../screens/SchedulingComplete';
+import { Confirmation } from '../screens/Confirmation';
 import { MyCars } from '../screens/MyCars';
-
-import { SignIn } from '../screens/SignIn';
-import { SignUpFirstStep } from '../screens/SignUp/SignUpFirstStep';
 
 
 const  { Navigator, Screen }  = createStackNavigator();
 
 const Stack = createStackNavigator();
 
-export function StackRoutes(){
+export function AppStackRoutes(){
     return(
 
         <Stack.Navigator
-            initialRouteName="SignIn"
-            screenOptions={({ route, navigation }) => ({
+            initialRouteName="Home"
+            screenOptions={({ route, navigation }) => ({                
                 headerShown: false,
-                gestureEnable: true,
+                gestureEnabled: true,
                 ...TransitionPresets.ModalPresentationIOS
             })}
         >
-            <Stack.Screen name="SignIn" component={SignIn} />
-            <Stack.Screen name="SignUpFirstStep" component={SignUpFirstStep} />
+
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="CarDetails" component={CarDetails} />
             <Stack.Screen name="Scheduling" component={Scheduling} />
             <Stack.Screen name="SchedulingDetails" component={SchedulingDetails} />
             <Stack.Screen name="SchedulingComplete" component={SchedulingComplete} />
+            <Stack.Screen name="Confirmation" component={Confirmation} />
             <Stack.Screen name="MyCars" component={MyCars} />
 
         </Stack.Navigator>
