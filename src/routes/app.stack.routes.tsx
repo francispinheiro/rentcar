@@ -22,7 +22,7 @@ export function AppStackRoutes(){
             initialRouteName="Home"
             screenOptions={({ route, navigation }) => ({                
                 headerShown: false,
-                gestureEnabled: true,
+                gestureEnabled: false,
                 ...TransitionPresets.ModalPresentationIOS
             })}
         >

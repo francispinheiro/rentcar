@@ -14,6 +14,8 @@ import { Button } from '../../components/Button';
 // import peopleSvg from '../../assets/people.svg'; 
 import { getAccessoryIcon } from '../../utils/getAccessoryIcon'; 
 
+import { CarDTO } from '../../dtos/CarDTO';
+//import { Car } from '../../database/model/Car';
 
 import {
   Container,
@@ -31,7 +33,7 @@ import {
   Acessories,
   Footer
 } from './styles';
-import { CarDTO } from '../../dtos/CarDTO';
+
 
 interface Params {
   car: CarDTO;

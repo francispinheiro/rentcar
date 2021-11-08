@@ -11,6 +11,8 @@
   "dependencies": {
     "@expo-google-fonts/archivo": "^0.2.0",
     "@expo-google-fonts/inter": "^0.2.0",
+    "@nozbe/watermelondb": "^0.23.0",
+    "@react-native-community/netinfo": "6.0.0",
     "@react-navigation/bottom-tabs": "^6.0.9",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
@@ -20,6 +22,7 @@
     "expo": "~41.0.1",
     "expo-app-loading": "^1.1.2",
     "expo-font": "~9.1.0",
+    "expo-image-picker": "~10.1.4",
     "expo-splash-screen": "~0.10.2",
     "expo-updates": "~0.5.4",
     "react": "16.13.1",
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-decorators": "^7.15.8",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
     "@types/react-native-calendars": "^1.1264.2",
